@@ -1,0 +1,26 @@
+Z7. Kolku broevi od nizata imaat vrednost 3,5,7 so koristenje na switch.
+
+List<int> niza = new List<int>{3, 5, 7, 6, 3, 5, 7, 3, 7, 7, 7, 7};
+            int brojac3 = 0;
+            int brojac5 = 0;
+            int brojac7 = 0;
+
+            for (int i = 0; i < niza.Count; i++)
+                {
+                switch (niza[i])
+                {
+                    case 3:
+                        brojac3++;
+                        break;
+                    case 5:
+                        brojac5++;
+                        break;
+                    case 7:
+                        brojac7++;
+                        break;
+                }
+                }
+
+            Console.WriteLine(brojac3);
+            Console.WriteLine(brojac5);
+            Console.WriteLine(brojac7);
